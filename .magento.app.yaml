@@ -1,0 +1,38 @@
+# This file describes an application. You can have multiple applications
+# in the same project.
+
+
+# The name of this app. Must be unique within a project.
+name: mymagento
+type: php:7.0
+
+# The configuration of app when it is exposed to the web.
+web:
+    locations:
+        "/":
+            root: "web"
+            allow: true
+            scripts: true
+            passthru: "/index.html"
+            index:
+                - index.html
+            expires: -1
+hooks:
+    build: |
+        echo "start build"
+        ls -al 
+        echo "end build"
+    deploy: |
+        rm -rf var/**
+        rm -rf app/etc/**
+        rm -rf pub/media/**
+        rm -rf pub/static/**
+
+mounts:
+    "var": "shared:files/var"
+    "app/etc": "shared:files/etc"
+    "pub/media": "shared:files/media"
+    "pub/static": "shared:files/static" 
+
+# The size of the persistent disk of the application (in MB).
+disk: 2048
