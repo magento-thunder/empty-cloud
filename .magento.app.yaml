@@ -19,10 +19,9 @@ web:
             expires: -1
 hooks:
     build: |
-        echo "start build"
-        ls -al 
-        echo "end build"
+        echo "Build"
     deploy: |
+        echo "Deploy"
         rm -rf var/**
         rm -rf app/etc/**
         rm -rf pub/media/**
