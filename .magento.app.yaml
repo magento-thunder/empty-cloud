@@ -4,7 +4,7 @@
 
 # The name of this app. Must be unique within a project.
 name: mymagento
-type: php:7.2
+type: php:7.4
 
 # The configuration of app when it is exposed to the web.
 web:
