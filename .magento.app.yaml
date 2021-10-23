@@ -6,6 +6,12 @@
 name: mymagento
 type: php:8.0
 
+runtime:
+    extensions:
+        - xsl
+        - newrelic
+        - sodium
+
 # The configuration of app when it is exposed to the web.
 web:
     locations:
