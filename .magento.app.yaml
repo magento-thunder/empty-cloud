@@ -6,6 +6,17 @@
 name: mymagento
 type: php:8.0
 
+# 1. Change flavor to none.
+build:
+    flavor: none
+
+# 2. Add composer ^2.0 as a php dependency.
+dependencies:
+    php:
+        composer/composer: '^2.0'
+
+# 3. Add a build hook to run the build tasks using Composer 2.x.
+
 runtime:
     extensions:
         - xsl
@@ -25,7 +36,8 @@ web:
             expires: -1
 hooks:
     build: |
-        echo "Build"
+        set -e
+        composer --no-ansi --no-interaction install --no-progress --prefer-dist --optimize-autoloader
     deploy: |
         echo "Deploy"
         rm -rf var/**
