@@ -43,7 +43,11 @@ hooks:
         rm -rf app/etc/**
         rm -rf pub/media/**
         rm -rf pub/static/**
+# side is in the form `<service name>:<endpoint name>`.
+relationships:
 
+    #elasticsearch: "elasticsearch:elasticsearch"
+    opensearch1-1: "opensearch1-1:opensearch"
 mounts:
     "var": "shared:files/var"
     "app/etc": "shared:files/etc"
