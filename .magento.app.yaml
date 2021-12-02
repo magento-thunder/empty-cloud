@@ -4,16 +4,16 @@
 
 # The name of this app. Must be unique within a project.
 name: mymagento
-type: php:7.4
+type: php:8.0
 
 # 1. Change flavor to none.
 build:
-    flavor: composer
+    flavor: none
 
 # 2. Add composer ^2.0 as a php dependency.
-#dependencies:
-#    php:
-#        composer/composer: '^2.0'
+dependencies:
+    php:
+        composer/composer: '^2.0'
 
 # 3. Add a build hook to run the build tasks using Composer 2.x.
 
