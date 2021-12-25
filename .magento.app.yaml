@@ -4,7 +4,7 @@
 
 # The name of this app. Must be unique within a project.
 name: mymagento
-type: php:8.0
+type: php:8.1
 
 # 1. Change flavor to none.
 build:
