@@ -49,7 +49,7 @@ hooks:
 # side is in the form `<service name>:<endpoint name>`.
 #relationships:
 relationships:
-    database: "mysql:mysql"
+    #database: "mysql:mysql"
     #elasticsearch: "elasticsearch:elasticsearch"
 #opensearch1-1: "opensearch1-1:opensearch"
 mounts:
