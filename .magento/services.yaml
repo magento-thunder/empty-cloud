@@ -2,6 +2,6 @@
 #opensearch1-1:
 #    type: opensearch:1.1
 #    disk: 512
-mysql:
-    type: mysql:10.4
-    disk: 5120
+#mysql:
+#    type: mysql:10.4
+#    disk: 5120
