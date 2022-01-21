@@ -48,7 +48,7 @@ hooks:
         rm -rf pub/static/**
 # side is in the form `<service name>:<endpoint name>`.
 #relationships:
-relationships:
+#relationships:
     #database: "mysql:mysql"
     #elasticsearch: "elasticsearch:elasticsearch"
 #opensearch1-1: "opensearch1-1:opensearch"
