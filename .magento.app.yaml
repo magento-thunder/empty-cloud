@@ -18,6 +18,7 @@ dependencies:
     php:
         composer/composer: '^2.0'
 
+
 # 3. Add a build hook to run the build tasks using Composer 2.x.
 
 runtime:
